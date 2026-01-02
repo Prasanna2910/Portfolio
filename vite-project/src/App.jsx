@@ -3,6 +3,7 @@ import { Routes, Route, Link } from "react-router-dom";
 import myPhoto from "./assets/myPhoto.png";
 import log from "./assets/log.png";
 import Works from "./Works";
+import Resume from "./Resume";
 import "./App.css";
 
 const SplitText = ({
@@ -125,7 +126,6 @@ const ScaleIn = ({ children, delay = 0 }) => {
   );
 };
 
-
 function Home() {
   return (
     <div className="flex justify-center">
@@ -174,7 +174,11 @@ function Home() {
         <div className="flex justify-center">
           <ScaleIn delay={0.5}>
             <div className="h-[380px] w-[380px] md:h-[450px] md:w-[450px] lg:h-[520px] lg:w-[520px] rounded-2xl overflow-hidden bg-gradient-to-br from-red-200 to-red-300 shadow-2xl">
-              <img src={myPhoto} alt="Prasanna" className="h-full w-full object-cover" />
+              <img
+                src={myPhoto}
+                alt="Prasanna"
+                className="h-full w-full object-cover"
+              />
             </div>
           </ScaleIn>
         </div>
@@ -188,17 +192,23 @@ function App() {
     <div className="min-h-screen bg-white text-gray-800">
       <nav className="py-4 flex justify-between items-center px-4 bg-red-50/80 backdrop-blur border-b-indigo-500">
         <FadeIn>
-          <img src={log} alt="Logo" className="size-12" />
+          <Link to="/">
+            <img src={log} alt="Logo" className="size-12 cursor-pointer" />
+          </Link>
         </FadeIn>
 
         <FadeIn delay={0.2}>
           <div className="flex gap-8 text-md font-medium mr-12">
+            <Link to="/" className="hover:text-black transition">
+              Home
+            </Link>
             <Link to="/works" className="hover:text-black transition">
               Works
             </Link>
-            <span className="hover:text-black transition cursor-pointer">
+            
+            <Link to="/Resume" className="hover:text-black transition">
               Resume
-            </span>
+            </Link>
             <span className="hover:text-black transition cursor-pointer">
               Self
             </span>
@@ -208,6 +218,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/works" element={<Works />} />
+        <Route path="/resume" element={<Resume />} />
       </Routes>
     </div>
   );

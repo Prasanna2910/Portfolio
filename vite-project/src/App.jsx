@@ -4,6 +4,7 @@ import Dock from "./Dock";
 import Home from "./Home";
 import Works from "./Works";
 import Resume from "./Resume";
+import ProfileCard from "./ProfileCard";
 
 import "./App.css";
 
@@ -12,7 +13,6 @@ function App() {
     <div className="min-h-screen bg-[#0e0e0e] text-gray-300">
       
       <Dock />
-
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/works" element={<Works />} />

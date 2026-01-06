@@ -23,7 +23,7 @@ function Works() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#0e0e0e] text-gray-300 flex justify-center">
+    <div className="min-h-screen bg-[#0e0e0e] text-gray-300 flex justify-center pb-10">
       <section className="w-[95%] max-w-[1200px] pt-40 grid grid-cols-1 lg:grid-cols-[420px_1fr] gap-x-20 items-start">
         
         <div className="flex justify-start">

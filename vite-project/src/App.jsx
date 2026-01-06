@@ -5,6 +5,7 @@ import Home from "./Home";
 import Works from "./Works";
 import Resume from "./Resume";
 import ProfileCard from "./ProfileCard";
+import Skills from "./skills";
 
 import "./App.css";
 
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/works" element={<Works />} />
         <Route path="/resume" element={<Resume />} />
+        <Route path="/skills" element={<Skills />} />
       </Routes>
 
     </div>

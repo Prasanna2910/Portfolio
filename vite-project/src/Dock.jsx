@@ -15,7 +15,6 @@ function Dock() {
     { to: "/works", icon: <FiFolder size={22} /> },
     { to: "/resume", icon: <FiBriefcase size={22} /> },
     { to: "/skills", icon: <FiTool size={22} /> },
-    { to: "/self", icon: <FiEdit size={22} /> },
   ];
 
   return (

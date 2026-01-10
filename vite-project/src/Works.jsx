@@ -47,32 +47,26 @@ function Works() {
               <div
                 key={index}
                 className="
-                  flex items-center justify-between gap-6
+                  flex items-center gap-6
                   px-4 py-3 rounded-xl
                   transition-colors duration-300
                   hover:bg-[#161616]
                 "
               >
-                <div className="flex items-center gap-6">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-35 h-35 rounded-xl object-cover"
-                  />
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-35 h-35 rounded-xl object-cover"
+                />
 
-                  <div>
-                    <h3 className="text-xl font-semibold text-white">
-                      {project.title}
-                    </h3>
-                    <p className="text-sm text-gray-400">
-                      {project.subtitle}
-                    </p>
-                  </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-white">
+                    {project.title}
+                  </h3>
+                  <p className="text-sm text-gray-400">
+                    {project.subtitle}
+                  </p>
                 </div>
-
-                <span className="text-orange-400 text-2xl">
-                  ↗
-                </span>
               </div>
             ))}
           </div>
